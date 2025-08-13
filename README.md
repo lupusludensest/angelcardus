@@ -2,6 +2,16 @@
 
 This repository contains a comprehensive UI testing framework for [AngelCard.us](https://www.angelcard.us/), implementing end-to-end (e2e) testing using Playwright.
 
+## Code Review Requested
+
+This branch contains the initial implementation of the UI testing framework with improved error handling and resilient selectors. Key improvements include:
+- Robust cookie consent handling
+- Flexible selectors to accommodate page changes
+- Enhanced error handling with detailed logging
+- Screenshot capture for debugging
+
+**Sourcery AI review requested for code quality assessment.**
+
 ## Project Overview
 
 AngelCard is a service that helps users monitor their credit cards and provides notifications about their status to prevent unwanted card cancellations, which could negatively impact credit scores. The service offers:
