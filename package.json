@@ -1,0 +1,42 @@
+{
+  "name": "angelcard-ui-tests",
+  "version": "1.0.0",
+  "description": "UI Testing Framework for AngelCard.us",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:safari": "playwright test --project=webkit",
+    "report": "allure generate ./ui/reports/allure-results -o ./ui/reports/allure-report --clean && allure open ./ui/reports/allure-report",
+    "webhook:start": "node ./ui/webhooks/server.js",
+    "codegen": "playwright codegen",
+    "debug": "playwright test --debug",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "ui-testing",
+    "e2e",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "allure-playwright": "^2.9.2",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.52.0",
+    "eslint-plugin-playwright": "^0.18.0",
+    "prettier": "^3.0.3"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "express": "^4.18.2",
+    "@faker-js/faker": "^8.0.2",
+    "winston": "^3.11.0"
+  }
+}

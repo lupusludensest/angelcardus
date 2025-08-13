@@ -1,0 +1,54 @@
+# Node modules
+node_modules/
+
+# Playwright generated files
+/playwright-report/
+/playwright/.cache/
+/test-results/
+/.auth/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Reports
+/ui/reports/
+
+# IDE/Editor folders
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts
+dist/
+build/
+*.tsbuildinfo
+
+# Coverage directory
+coverage/
+
+# Test screenshots and videos
+/ui/screenshots/
+/ui/videos/
+/ui/test-results/
+/ui/allure-results/
+/ui/allure-report/
+
+# Temporary files
+.tmp/
+.temp/
