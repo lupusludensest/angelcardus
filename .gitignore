@@ -52,3 +52,7 @@ coverage/
 # Temporary files
 .tmp/
 .temp/
+
+# Playwright
+/blob-report/
+/playwright/.auth/
